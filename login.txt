@@ -1,0 +1,47 @@
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.Test;
+
+public class Login {
+
+	
+  WebDriver driver;
+  
+  @Test
+  public void login_test() throws  Exception {
+	  
+	  System.setProperty("webdriver.chrome.driver","C:\\chromedriver_win32\\chromedriver.exe");
+	  driver = new ChromeDriver();
+	  driver.manage().window().maximize();
+	  driver.get("https://www.amazon.in/");
+	  //driver.get("https://opensource-demo.orangehrmlive.com/");
+	  
+	 /* driver.findElement(By.name("txtUsername")).sendKeys("Admin");
+	  driver.findElement(By.name("txtPassword")).sendKeys("admin123");
+	  driver.findElement(By.id("btnLogin")).click();
+	  
+	  
+	  
+	 driver.findElement(By.xpath("//*[@id=\"menu_admin_viewAdminModule\"]/b")).click();
+	 
+	 driver.findElement(By.xpath("//*[@id=\"menu_admin_nationality\"]")).click();
+	 
+	 
+	// driver.findElement(By.xpath("//*[@id=\"btnAdd\"]")).click();
+	  
+	 // driver.findElement(By.xpath("//*[@id=\"nationality_name\"]")).sendKeys("Indian12345");
+	  
+		// driver.findElement(By.xpath("//*[@id=\"btnSave\"]")).click();
+	 
+	 
+	 driver.findElement(By.xpath("//*[@id=\"ohrmList_chkSelectRecord_1\"]")).click();
+	 Thread.sleep(5000);
+	  driver.findElement(By.xpath("//*[@id=\"btnDelete\"]")).click();
+	  Thread.sleep(5000);
+	  driver.findElement(By.xpath("//*[@id=\"dialogDeleteBtn\"]")).click(); */
+	  
+	  
+  }
+}
+ 
